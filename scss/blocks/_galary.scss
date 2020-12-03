@@ -36,6 +36,7 @@
 .galary__item {
   position: relative;
   padding: 141px 108px;
+  overflow: hidden;
   &:nth-child(1) {
     grid-column: 1 / 4;
     grid-row: 1 / 6;
@@ -64,6 +65,10 @@
   top: 0;
   width: 100%;
   height: 100%;
+  transition: transform 0.3s ease;
+  &:hover {
+    transform: scale(1.02);
+  }
 }
 .galary__item-text {
   position: absolute;
